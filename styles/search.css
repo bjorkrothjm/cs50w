@@ -4,12 +4,25 @@
   margin-top: 100px;
 }
 .logo-container {
+  display: inline-block;
+  position: relative;
 
 }
 .logo-image {
   width: 275px;
   margin-bottom: 10px;
 }
+.logo-images-text {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+
+  font-family: arial;
+  font-size: 16px;
+  color: #4285f4;
+
+}
+
 .search-bar {
   border: 1px solid #dfe1e5;
   background: #fff;
