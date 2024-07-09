@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
         <link rel="stylesheet" href="./styles/search.css">
     </head>
@@ -16,14 +18,16 @@
             </div>
 
             <div class="logo-container">
-                <img class="logo-image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+                <img class="logo-image" src="./images/googlelogo_color_272x92dp.png" alt="Google logo">
             </div>
 
             <form class="search-form" action="https://www.google.com/search">
 
-                <input class="search-bar" type="text" name="q">
+                <div class="search-bar-container">
+                    <input class="search-bar" type="text" name="q">
+                </div>
                 
-                <div>
+                <div class="button-container">
                     <input class="search-button" type="submit" value="Google Search">
                     <input class="search-button" type="submit" value="I'm Feeling Lucky" name="btnI">
                 </div>
