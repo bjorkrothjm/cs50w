@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Advanced Search</title>
+        <link rel="stylesheet" href="./styles/search.css">
     </head>
     <body>
         <div class="header-links">
             <span class="google-link"><a href="./index.html">Google Search</a></span>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="logo-container" id="advanced-logo-container">
+            <a href="./advanced-search.html">
+                <img class="logo-image" id="advanced-logo-image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+            </a>
+        </div>
+
+        <h1 class="advanced-header">Advanced search</h1>
+
+        <div class="advanced-section-separator"></div>
+
+        <div class="advanced-search-container">
+
+            <span class="advanced-serach-text-intro">Find pages with ...</span>
+            
+            <form  action="https://www.google.com/search">
+                <div class="advanced-serach-form">
+                    <div class="advanced-serach-text-container">
+                        <span class="advanced-search-text">all these words:</span>
+                    </div>
+                    <div class="advanced-input-container">
+                        <input class="advanced-input" type="text" name="as_q">
+                    </div>
+                </div>
+
+                <div class="advanced-serach-form">
+                    <div class="advanced-serach-text-container">
+                        <span class="advanced-search-text">this exact word or phrase:</span>
+                    </div>
+                    <div class="advanced-input-container">
+                        <input class="advanced-input" type="text" name="as_epq">
+                    </div>
+                </div>
+
+                <div class="advanced-serach-form">
+                    <div class="advanced-serach-text-container">
+                        <span class="advanced-search-text">any of these words:</span>
+                    </div>
+                    <div class="advanced-input-container">
+                        <input class="advanced-input" type="text" name="as_oq">
+                    </div>
+                </div>
+
+                <div class="advanced-serach-form">
+                    <div class="advanced-serach-text-container">
+                        <span class="advanced-search-text">none of these words:</span>
+                    </div>
+                    <div class="advanced-input-container">
+                        <input class="advanced-input" type="text" name="as_eq">
+                    </div>
+                </div>
+
+                <input class="advanced-search-button" type="submit" value="Advanced search">
+
+
+            </form>
+            
+        </div>
+
     </body>
 </html>
